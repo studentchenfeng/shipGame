@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>emmm...</title>
+    <script>
+    function init() {
+      var h1Obj=  document.getElementById("title");
+       picObj = document.getElementById("pic");
+      
+      //alert(add.innerHTML);
+      h1Obj.innerHTML = "表面上应和他是大佬，其实内心根本不想理他";
+      h1Obj.setAttribute("class","tit")
+      picObj.getAttribute("alt")
+    }
+    function changePicture(){
+      picObj.setAttribute("src","2.jpg")
+    }
+    window.onload = init;
+  </script>
+</body>
+</head>
+<body>
+  <h1 id = "add">大佬</h1>
+  <img id = "pic" src ="1.jpg" alt = "pic1">
+  <button onclick="changePicture()">点我换图</button>
+</html>

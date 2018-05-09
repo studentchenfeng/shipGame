@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Car</title>
+</head>
+<body>
+  <script>
+
+    var audi = {
+      make: 'audi',
+      model: 'A6',
+      year: 2016,
+      color: 'black',
+      passerengers: 4,
+      concertible: false,
+      mileage: 500
+    }
+    var Bugatti= {
+      make: 'Bugatti',
+      model: 'veyron',
+      year: 2017,
+      color: 'pink',
+      passerengers: 2,
+      concertible: true,
+      mileage: 2000000
+    }  
+    function isNewCar(car){
+        if(car.year >= 2017 && car.mileage <= 10000){
+          document.write(car.make + "是新车<br>")
+        }else{
+          document.write(car.make + "是破车，不值钱<br>")
+        }
+    }
+    var fiat = {
+      make: "Fiat",
+      model: "500",
+      color: "Medium Blue",
+      drive: function(){
+        alert("Zoom Zoom!!");
+      }
+    }
+
+    isNewCar(audi);
+    isNewCar(Bugatti);
+    fiat.drive()
+  </script>
+</body>
+</html>
