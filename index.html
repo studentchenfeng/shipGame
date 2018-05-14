@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <script>
+      function init(){
+        var str = "I'm fine thanks and u!";
+        document.write(str.length);
+        document.write("<br>")
+        document.write(str.indexOf('and'));
+        document.write("<br>")
+        document.write(str.substring(16,19));
+        var strToCut = "thanks";
+        var index = "320922200202012412";
+        document.write("<br>");
+        document.write(index.substring(6,10) + "年" + index.substring(10,12) + "月" + index.substring(12,14) + "日");
+        document.write("<br>");
+        var phone = '051268716929'
+        document.write(phone.substring(0,4)+ "-" + phone.substring(4,13));
+        document.write("<br>");
+        var score = "100,200,300,151,152,233,23";
+        var vals = score.split(",")
+        document.write(vals[5]);
+   }
+
+      window.onload = init;
+  </script>
+</head>
+<body>
+  
+</body>
+</html>
