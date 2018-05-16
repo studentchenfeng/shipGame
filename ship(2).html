@@ -21,11 +21,40 @@
       left: 0px;
       color: rgb(83, 175, 19);
     }
+    table {
+       position: absolute;
+       left: 173.px;
+       top: 98px;
+       border-spacing: 0px;
+    }
+    td {
+      width: 94px;
+      height: 94px;
+    }
+    form {
+      position: absolute;
+      bottom: 0pxl;
+      right: 0px;
+      padding: 15px;
+      background-color: rgb(83, 175, 19);
+    }
+    form input {
+      background-color: rgb(152, 207, 19);
+      border-color: rgb(83, 175, 19);
+      font-size: 1em;
+    }
+    .hit {
+      background: url("ship.png") no-repeat center cencer;
+    }
+    .miss {
+      background: url("miss.png") no-repeat center center;
+    }
     </style>
   </head>
   <body>
     <h1>Play battleship!</h1>
     <div id="board">
+      <div id="messageArea"></div>
       <div id = "messageArea"></div>
       <table>
         <tr>
@@ -33,7 +62,7 @@
           <td id="04"></td><td id="05"></td><td id="06"></td>
         </tr>
         <tr>
-          <td id="10"></td><td id="11"></td><td id="12"></td><td id="13"></td>
+          <td id="10"></td><td class="hit" id="11"></td><td id="12"></td><td id="13" class="hit"></td>
           <td id="14"></td><td id="15"></td><td id="16"></td>
         </tr>
         <tr>
@@ -62,6 +91,6 @@
         <input type="button" id="fireButton" value="Fire!">
       </form>
     </div>
-    <script src="battleship.js"></script>
+    <script src="ship.js"></script>
   </body>
 </html>
